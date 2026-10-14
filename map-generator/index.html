@@ -38,6 +38,7 @@ main{position:relative;display:flex;flex-direction:column;min-width:0}
 .hint{color:var(--mute);font-size:12px;margin:6px 0 0}
 @media (max-width:820px){.app{grid-template-columns:1fr;grid-template-rows:56vh auto;height:auto}main{order:-1;height:56vh;position:sticky;top:0;z-index:2;background:var(--bg)}aside{border-right:0;overflow:visible}#list{max-height:260px}}
 .src{font-size:12px;color:var(--mute);border-top:1px solid var(--line);padding-top:10px}
+.src a{color:var(--acc)}
 </style></head><body>
 <div class="app">
 <aside>
@@ -67,7 +68,7 @@ main{position:relative;display:flex;flex-direction:column;min-width:0}
 <section><h2>บันทึกภาพ</h2>
 <div class="row"><button class="btn pri" id="png">PNG</button><button class="btn" id="svg">SVG</button><button class="btn" id="reset">เริ่มใหม่</button></div>
 <p class="hint" id="msg" role="status"></p></section>
-<footer class="src">ที่มาของขอบเขตการปกครอง: ชุดข้อมูลเปิด OpenGISData-Thailand (github.com/chingchai/OpenGISData-Thailand) ย่อรูปเพื่อการแสดงผล ไม่ใช่ข้อมูลทางการ ควรตรวจเทียบกับข้อมูลอย่างเป็นทางการก่อนใช้ในเอกสารสำคัญ</footer>
+<footer class="src"><b>ผู้จัดทำ:</b> อนุวัฒน์ วรรักษ์ นักวิชาการส่งเสริมการเกษตรชำนาญการ กลุ่มยุทธศาสตร์และสารสนเทศ สำนักงานเกษตรจังหวัดอุดรธานี<br><b>ขอบเขตการปกครอง:</b> ชุดข้อมูล <a href="https://github.com/chingchai/OpenGISData-Thailand" target="_blank" rel="noopener">OpenGISData-Thailand</a> ใบอนุญาต <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> ข้อมูลต้นทางจากกรมการปกครอง กระทรวงมหาดไทย ผู้จัดทำย่อรูปเพื่อการแสดงผล ไม่ใช่ข้อมูลทางการ ควรตรวจเทียบกับข้อมูลอย่างเป็นทางการก่อนใช้ในเอกสารสำคัญ<br><b>ฟอนต์:</b> Noto Sans Thai (SIL Open Font License) ผ่าน Google Fonts</footer>
 </aside>
 <main><div id="tip"></div><div id="stage"><svg id="map" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="แผนที่จังหวัดอุดรธานี"></svg></div></main>
 </div>
